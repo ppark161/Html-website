@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WEB1-HTML</title>
+    <meta charset="utf-8">
+    <style>
+      body{
+        margin: 0;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:40px;
+        text-align: center;
+        border-bottom: 2px solid gray;
+        margin: 0;
+        padding: 30px;
+      }
+      #grid ul {
+        border-right: 2px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 20px;
+        padding-left: 32px;
+        /*모든 ul이 아니고 gird id안에 들어있는 ul태그를 의미함*/
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 180px 1fr;
+      }
+      #article{
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+        #grid ul {
+            border-right: none;
+          }
+        h1 {
+            border-bottom: none;
+          }
+      }
+    </style>
+  </head>
+<body>
+<h1>코린이의 코딩일지</h1>
+<div id="grid">
+    <ul>
+      <li>  <a href="01.html">2022-05-18</a>
+      <li>  <a href="02.html">2022-05-19</a>
+      <li>  <a href="03.html">2022-05-21</a>
+      <li>  <a href="04_부록.html">2022-05-24</a>
+    </ul>
+  <div id="article">
+    <h3>2022-05-19 </h3>
+      id 선택자의 특수기호는 #임<br>
+    id선택자는 class선택자를 이기며, 클래스선택자는 태그선택자를 이김 <br>
+    만약 다같은 선택자 사용시 맨마지막에 사용한 선택자가 우선순위가 높음 <br>
+    이유 : id선택자 id가 active인 tag가 웹페이지에 한번만 사용해야됨/ id는 한번만 등장해야됨 <br>
+    즉
+  </div>
+</div>
+
+<br><a href="05_index.html">돌아가기</a>
+
+</body>
